@@ -1431,6 +1431,45 @@
     }
   }
 
+  /* =========================================================
+     MOBILE BODY READABILITY (per ops guide)
+     ========================================================= */
+  p, li, span, div{
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    line-break: strict;
+  }
+  .section p{
+    font-size: 16px;
+    line-height: 2.0;
+    letter-spacing: .03em;
+    text-align: left;
+  }
+  @media (min-width: 720px){
+    .section p{ font-size: 17px; }
+  }
+  .section p + p{
+    margin-top: 1.4em;
+  }
+
+  /* checklist row — prevent overflow on small screens */
+  .checklist li{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    white-space: normal;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+  .checklist li > span:not(.chk),
+  .checklist li p{
+    flex: 1;
+    min-width: 0;
+    white-space: normal;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
 </style>
 </head>
 <body oncontextmenu="return false;" oncopy="return false;" oncut="return false;" onpaste="return false;" ondragstart="return false;" onselectstart="return false;">
@@ -1549,8 +1588,7 @@
       <span>PROLOGUE&nbsp;／&nbsp;はじめに</span>
     </div>
     <h2 class="h1">
-      きみの<span class="uline accent">指先</span>が、<br/>
-      きみの幸せを<span class="bd">壊して</span>へんか？
+      きみの<span class="uline accent">指先</span>が、きみの幸せを<span class="bd">壊して</span>へんか？
     </h2>
 
     <p class="lead dropcap">
@@ -1566,9 +1604,7 @@
     </p>
 
     <div class="pullquote">
-      テクで掴んだ男は、テクが切れた瞬間に逃げる。<br/>
-      きみがほんまに欲しいんは「掴む技術」やない。<br/>
-      <span style="color:var(--gold-3); font-weight:700;">手放しても、向こうから戻ってくる軸</span>や。
+      テクで掴んだ男は、テクが切れた瞬間に逃げる。きみがほんまに欲しいんは「掴む技術」やない。<span style="color:var(--gold-3); font-weight:700;">手放しても、向こうから戻ってくる軸</span>や。
       <cite>― SUPER JUN</cite>
     </div>
 
@@ -1593,9 +1629,7 @@
       <span>CHAPTER&nbsp;ONE</span>
     </div>
     <h2 class="h1">
-      男が本当に冷める瞬間。<br/>
-      <span class="bd">テクニック</span>やなくて、<br/>
-      <span class="uline accent">「自分軸の喪失」</span>や。
+      男が本当に冷める瞬間。<span class="bd">テクニック</span>やなくて、<span class="uline accent">「自分軸の喪失」</span>や。
     </h2>
 
     <p class="lead">
@@ -1648,8 +1682,7 @@
     </p>
 
     <div class="pullquote">
-      重い女性、とは重量の話やない。<br/>
-      自分の人生の重さを、相手にあずけてる人間のことや。
+      重い女性、とは重量の話やない。自分の人生の重さを、相手にあずけてる人間のことや。
       <cite>― JUN'S DEFINITION</cite>
     </div>
 
@@ -1704,9 +1737,7 @@
       <span>CHAPTER&nbsp;TWO</span>
     </div>
     <h2 class="h1">
-      きみが我慢してきた分、<br/>
-      相手は<span class="bd">1ミリも</span><br/>
-      <span class="uline accent">覚えてへん</span>。
+      きみが我慢してきた分、相手は<span class="bd">1ミリも</span><span class="uline accent">覚えてへん</span>。
     </h2>
 
     <p class="lead">
@@ -1718,15 +1749,15 @@
       <div class="stat-cards">
         <div class="stat-card">
           <span class="stat-num">54<small>%</small></span>
-          <span class="stat-desc">そのまま<br/>自然消滅</span>
+          <span class="stat-desc">そのまま自然消滅</span>
         </div>
         <div class="stat-card gold">
           <span class="stat-num">8<small>%</small></span>
-          <span class="stat-desc">関係が<br/>改善した</span>
+          <span class="stat-desc">関係が改善した</span>
         </div>
         <div class="stat-card">
           <span class="stat-num">38<small>%</small></span>
-          <span class="stat-desc">自分から<br/>区切りをつけた</span>
+          <span class="stat-desc">自分から区切りをつけた</span>
         </div>
       </div>
       <p class="stat-source">※ スーパーじゅんさん相談データ（n=500）</p>
@@ -1755,8 +1786,7 @@
     </p>
 
     <div class="pullquote">
-      言葉にせん優しさは、優しさやのうて「忖度」や。<br/>
-      忖度で続く恋愛は、決算の日に必ず潰れる。
+      言葉にせん優しさは、優しさやのうて「忖度」や。忖度で続く恋愛は、決算の日に必ず潰れる。
       <cite>― JUN'S LAW No.07</cite>
     </div>
 
@@ -1811,9 +1841,7 @@
       <span>CHAPTER&nbsp;THREE</span>
     </div>
     <h2 class="h1">
-      寂しい夜の<span class="bd">指先</span>が、<br/>
-      きみの自己肯定感を<br/>
-      <span class="uline accent">ガッツリ削る</span>。
+      寂しい夜の<span class="bd">指先</span>が、きみの自己肯定感を<span class="uline accent">ガッツリ削る</span>。
     </h2>
 
     <p class="lead">
@@ -1856,9 +1884,7 @@
     </p>
 
     <div class="pullquote">
-      動かんことが、いちばん強い。<br/>
-      送らんことが、いちばん効く。<br/>
-      <span style="color:var(--gold-3); font-weight:700;">寝てしまうことが、いちばんの勝ちや。</span>
+      動かんことが、いちばん強い。送らんことが、いちばん効く。<span style="color:var(--gold-3); font-weight:700;">寝てしまうことが、いちばんの勝ちや。</span>
       <cite>― JUN'S NIGHT RULE</cite>
     </div>
 
@@ -1920,8 +1946,7 @@
       <span>CHAPTER&nbsp;FOUR</span>
     </div>
     <h2 class="h1">
-      男に<span class="uline accent">追われる</span>自分軸を、<br/>
-      取り戻す<span class="accent">3つのステップ</span>。
+      男に<span class="uline accent">追われる</span>自分軸を、取り戻す<span class="accent">3つのステップ</span>。
     </h2>
 
     <p class="lead">
@@ -1987,9 +2012,7 @@
       <span>EPILOGUE&nbsp;／&nbsp;おわりに</span>
     </div>
     <h2 class="h1">
-      一人で抱え込んで、<br/>
-      また同じ失敗を繰り返すのは、<br/>
-      <span class="uline accent">もう、終わりにしよう。</span>
+      一人で抱え込んで、また同じ失敗を繰り返すのは、<span class="uline accent">もう、終わりにしよう。</span>
     </h2>
 
     <p class="lead dropcap">
@@ -2008,9 +2031,7 @@
     </p>
 
     <div class="pullquote">
-      きみの3年は、きみだけで作ったもんやない。<br/>
-      せやから、3年を畳むのも、きみ一人でやらんでええ。<br/>
-      <span style="color:var(--gold-3); font-weight:700;">俺のところに、直接話しにきなさい。</span>
+      きみの3年は、きみだけで作ったもんやない。せやから、3年を畳むのも、きみ一人でやらんでええ。<span style="color:var(--gold-3); font-weight:700;">俺のところに、直接話しにきなさい。</span>
       <cite>― SUPER JUN</cite>
     </div>
 
@@ -2059,12 +2080,10 @@
     <div class="cta-wrap">
       <div class="ki">FREE&nbsp;LINE&nbsp;CONSULTATION&nbsp;／&nbsp;LINE無料相談</div>
       <h2>
-        まずはLINEで、<br/>
-        <span class="em">きみの話</span>を、<br/>聞かせてや。
+        まずはLINEで、<span class="em">きみの話</span>を、聞かせてや。
       </h2>
       <p class="k">
-        スーパーじゅんさんの無料相談は、テンプレ回答も売り込みも一切なし。<br/>
-        きみの課題を見極めた上で、電話相談かコーチングか、合う道を一緒に設計する場や。
+        スーパーじゅんさんの無料相談は、テンプレ回答も売り込みも一切なし。きみの課題を見極めた上で、電話相談かコーチングか、合う道を一緒に設計する場や。
       </p>
 
       <div class="btn-wrap">
@@ -2081,9 +2100,7 @@
   <footer class="colophon">
     <div class="mark">✦</div>
     <div>
-      『3年の執着を3日で手放す、男の本音と自分軸復活のバイブル』<br/>
-      著 ／ スーパーじゅんさん &nbsp;・&nbsp; SUPER&nbsp;JUN&nbsp;BIBLE&nbsp;VOL.&nbsp;01<br/>
-      ©&nbsp;SUPER&nbsp;JUN&nbsp;&nbsp;ALL&nbsp;RIGHTS&nbsp;RESERVED.
+      『3年の執着を3日で手放す、男の本音と自分軸復活のバイブル』著 ／ スーパーじゅんさん &nbsp;・&nbsp; SUPER&nbsp;JUN&nbsp;BIBLE&nbsp;VOL.&nbsp;01©&nbsp;SUPER&nbsp;JUN&nbsp;&nbsp;ALL&nbsp;RIGHTS&nbsp;RESERVED.
     </div>
   </footer>
 
